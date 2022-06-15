@@ -1,7 +1,7 @@
 version: '3'
 services:
-  node-restify:
-    container_name: node-restify
+  node-restiry:
+    container_name: node-restiry
     build:
       context: .
     ports:

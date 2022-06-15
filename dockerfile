@@ -1,12 +1,9 @@
 FROM node:16
 
-WORKDIR /usr/node/restify
-
-COPY package.json /usr/node/restify
-
+WORKDIR /usr/src/app
+COPY package*.json ./
 RUN npm install
-
-COPY . /usr/node/restify
+COPY . .
 EXPOSE 3000
 
 CMD ["npm", "start", "server.js"]
